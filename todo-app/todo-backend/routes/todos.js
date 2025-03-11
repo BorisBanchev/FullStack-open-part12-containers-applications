@@ -9,6 +9,7 @@ router.get('/', async (_, res) => {
 })
 
 /* POST todo to listing. */
+// Added one more todo from MongoCLI
 router.post('/', async (req, res) => {
   const todo = await Todo.create({
     text: req.body.text,
