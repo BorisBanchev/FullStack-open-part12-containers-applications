@@ -1,0 +1,244 @@
+Script started on 2025-03-11 19:07:04+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/todo-app/todo-backend;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/todo-app/todo-backendm$ git pushcommit -m"Add exercise 12.8"
+statusadd .statusdocker compose -f docker-compose.dev.yml updownup
+git statusadd .statuscommit -m"Add exercise 12.8"
+pushdocker ps
+2004l
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                           NAMES
+3abac7729fa2   redis:latest   "docker-entrypoint.s…"   11 minutes ago   Up 11 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp     todo-backend-redis-1
+3aa52587f517   mongo          "docker-entrypoint.s…"   11 minutes ago   Up 11 minutes   0.0.0.0:3456->27017/tcp, [::]:3456->27017/tcp   todo-backend-mongo-1
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/todo-app/todo-backend;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/todo-app/todo-backendm$ docker exec -it todo-backend-redis-1mtodo-backend-redis-1 bash
+2004l
+2004hroot@3abac7729fa2:/data# redis-cli
+2004l
+127.0.0.1:6379> 
+127.0.0.1:6379> d
+C
+127.0.0.1:6379> 
+C
+127.0.0.1:6379> K
+C
+127.0.0.1:6379> KE
+C
+127.0.0.1:6379> KEY
+C
+127.0.0.1:6379> KEYS
+C
+127.0.0.1:6379> KEYS 90;49mpattern
+C
+127.0.0.1:6379> KEYS *90;49m pattern
+C
+127.0.0.1:6379> KEYS *
+C
+1) "added_todos"
+127.0.0.1:6379> 
+127.0.0.1:6379> G
+C
+127.0.0.1:6379> GE
+C
+127.0.0.1:6379> GET
+C
+127.0.0.1:6379> GET 90;49mkey
+C
+127.0.0.1:6379> GET a90;49m key
+C
+127.0.0.1:6379> GET ad90;49m key
+C
+127.0.0.1:6379> GET add90;49m key
+C
+127.0.0.1:6379> GET adde90;49m key
+C
+127.0.0.1:6379> GET added90;49m key
+C
+127.0.0.1:6379> GET added_90;49m key
+C
+127.0.0.1:6379> GET added_t90;49m key
+C
+127.0.0.1:6379> GET added_to90;49m key
+C
+127.0.0.1:6379> GET added_tod90;49m key
+C
+127.0.0.1:6379> GET added_todo90;49m key
+C
+127.0.0.1:6379> GET added_todod90;49m key
+C
+127.0.0.1:6379> GET added_todods90;49m key
+C
+127.0.0.1:6379> GET added_todod90;49m key
+C
+127.0.0.1:6379> GET added_todo90;49m key
+C
+127.0.0.1:6379> GET added_todos90;49m key
+C
+127.0.0.1:6379> GET added_todos
+C
+"1"
+127.0.0.1:6379> 
+127.0.0.1:6379> S
+C
+127.0.0.1:6379> SE
+C
+127.0.0.1:6379> SET
+C
+127.0.0.1:6379> SET 90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT uni
+C
+127.0.0.1:6379> SET a90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT u
+C
+127.0.0.1:6379> SET ad90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT 
+C
+127.0.0.1:6379> SET add90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT
+C
+127.0.0.1:6379> SET adde90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXA
+C
+127.0.0.1:6379> SET added90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EX
+C
+127.0.0.1:6379> SET added:90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|E
+C
+127.0.0.1:6379> SET added:t90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|
+C
+127.0.0.1:6379> SET added:90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|E
+C
+127.0.0.1:6379> SET added90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EX
+C
+127.0.0.1:6379> SET added_90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|E
+C
+127.0.0.1:6379> SET added_t90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|
+C
+127.0.0.1:6379> SET added_to90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds
+C
+127.0.0.1:6379> SET added_tod90;49m key value [NX|XX] [GET] [EX seconds|PX millisecond
+C
+127.0.0.1:6379> SET added_todo90;49m key value [NX|XX] [GET] [EX seconds|PX millisecon
+C
+127.0.0.1:6379> SET added_todos90;49m key value [NX|XX] [GET] [EX seconds|PX milliseco
+C
+127.0.0.1:6379> SET added_todos 90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|
+C
+127.0.0.1:6379> SET added_todos 990;49m value [NX|XX] [GET] [EX seconds|PX millisecond
+C
+127.0.0.1:6379> SET added_todos 9090;49m value [NX|XX] [GET] [EX seconds|PX millisecon
+C
+127.0.0.1:6379> SET added_todos 90090;49m value [NX|XX] [GET] [EX seconds|PX milliseco
+C
+127.0.0.1:6379> SET added_todos 900190;49m value [NX|XX] [GET] [EX seconds|PX millisec
+C
+127.0.0.1:6379> SET added_todos 9001
+C
+OK
+127.0.0.1:6379> 
+127.0.0.1:6379> G
+C
+127.0.0.1:6379> GE
+C
+127.0.0.1:6379> GET
+C
+127.0.0.1:6379> GET 90;49mkey
+C
+127.0.0.1:6379> GET a90;49m key
+C
+127.0.0.1:6379> GET ad90;49m key
+C
+127.0.0.1:6379> GET add90;49m key
+C
+127.0.0.1:6379> GET adde90;49m key
+C
+127.0.0.1:6379> GET added90;49m key
+C
+127.0.0.1:6379> GET added_90;49m key
+C
+127.0.0.1:6379> GET added_t90;49m key
+C
+127.0.0.1:6379> GET added_to90;49m key
+C
+127.0.0.1:6379> GET added_tod90;49m key
+C
+127.0.0.1:6379> GET added_todo90;49m key
+C
+127.0.0.1:6379> GET added_todos90;49m key
+C
+127.0.0.1:6379> GET added_todos
+C
+"9001"
+127.0.0.1:6379> 
+127.0.0.1:6379> GET added_todos90;49m key
+C
+127.0.0.1:6379> GET added_todos
+C
+"9002"
+127.0.0.1:6379> 
+127.0.0.1:6379> D
+C
+127.0.0.1:6379> DE
+C
+127.0.0.1:6379> DEL
+C
+127.0.0.1:6379> DEL 90;49mkey [key ...]
+C
+127.0.0.1:6379> DEL a90;49m key [key ...]
+C
+127.0.0.1:6379> DEL ad90;49m key [key ...]
+C
+127.0.0.1:6379> DEL add90;49m key [key ...]
+C
+127.0.0.1:6379> DEL adde90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_t90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_ti90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_tid90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_tidi90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_tid90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_ti90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_t90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_to90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_tod90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_todo90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_todos90;49m key [key ...]
+C
+127.0.0.1:6379> DEL added_todos
+C
+(integer) 1
+127.0.0.1:6379> 
+127.0.0.1:6379> DEL added_todos90;49m key [key ...]
+C
+127.0.0.1:6379> GET added_todos90;49m key
+C
+127.0.0.1:6379> SET added_todos 900190;49m value [NX|XX] [GET] [EX seconds|PX millisec
+C
+127.0.0.1:6379> GET added_todos90;49m key
+C
+127.0.0.1:6379> GET added_todos
+C
+"1"
+127.0.0.1:6379> 
+127.0.0.1:6379> e
+C
+127.0.0.1:6379> ex
+C
+127.0.0.1:6379> exi
+C
+127.0.0.1:6379> exit
+C
+127.0.0.1:6379> exit
+C
+2004hroot@3abac7729fa2:/data# exit
+2004l
+exit
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/todo-app/todo-backend;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/todo-app/todo-backendm$ exit
+2004l
+exit
+
+Script done on 2025-03-11 19:10:07+02:00 [COMMAND_EXIT_CODE="0"]
