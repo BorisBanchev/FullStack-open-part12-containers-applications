@@ -1,0 +1,37 @@
+Script started on 2025-03-11 12:19:34+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="153" LINES="24"]
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/script-answers;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/script-answersm$ ls
+2004l
+exercise12_1.txt  typescript
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/script-answers;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/script-answersm$ dock^?lsdocker psrm a8 -fpsexitdocker run -t ubuntucontainer runrun -t ubuntu ubuntu- ubuntui ubuntut ubuntu
+2004l
+2004h]0;root@62d27f675e16: /root@62d27f675e16:/# mkdir usr/src/app
+2004l
+2004h]0;root@62d27f675e16: /root@62d27f675e16:/# ls
+2004l
+;36mbin  ;34mboot  ;34mdev  ;34metc  ;34mhome  ;36mlib  ;36mlib64  ;34mmedia  ;34mmnt  ;34mopt  ;34mproc  ;34mroot  ;34mrun  ;36msbin  ;34msrv  ;34msys  ;42mtmp  ;34musr  ;34mvar
+2004h]0;root@62d27f675e16: /root@62d27f675e16:/# cd usr/s
+sbin/  share/ src/   
+]0;root@62d27f675e16: /root@62d27f675e16:/# cd usr/src/app/
+2004l
+2004h]0;root@62d27f675e16: /usr/src/approot@62d27f675e16:/usr/src/app# ls
+2004l
+2004h]0;root@62d27f675e16: /usr/src/approot@62d27f675e16:/usr/src/app# touch index.js
+2004l
+2004h]0;root@62d27f675e16: /usr/src/approot@62d27f675e16:/usr/src/app# ls
+2004l
+index.js
+2004h]0;root@62d27f675e16: /usr/src/approot@62d27f675e16:/usr/src/app# exit
+2004l
+exit
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/script-answers;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/script-answersm$ ls
+2004l
+exercise12_1.txt  typescript
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/script-answers;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/script-answersm$ cd typecd tcxcd typesccat typescript 
+2004l
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/script-answers;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/script-answersm$ c9odode .
+2004l
+2004h]0;banboris@lx3-fuxi115: ~/FullStack-open-part12-containers-applications/script-answers;32mbanboris@lx3-fuxi115m:;34m~/FullStack-open-part12-containers-applications/script-answersm$ exit
+2004l
+exit
+
+Script done on 2025-03-11 12:22:35+02:00 [COMMAND_EXIT_CODE="0"]
