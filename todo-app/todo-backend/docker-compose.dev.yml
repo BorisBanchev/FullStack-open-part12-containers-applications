@@ -17,4 +17,4 @@ services:
 
     command: ['redis-server', '--appendonly', 'yes']
     volumes:
-      - ./todo-backend/redis_data:/data
+      - ./redis_data:/data
